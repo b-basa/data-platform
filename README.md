@@ -22,5 +22,6 @@ localhost/prefect -> Prefect frontend
 localhost/frontend -> File names
 ```
 
-Go to http://localhost/prefect/deployments, quick run the register_file deployment.  
-Watch the flow run, then you can see the file name in the frontend.
+Go to http://localhost/prefect/deployments, quick run the register_file deployment with random inputs.  
+Watch the flow run, then you can see your input in the frontend.  
+The prefect flow is ran on the prefect worker, then the result is written to the database using the backend.
